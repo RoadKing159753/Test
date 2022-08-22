@@ -15,7 +15,7 @@ provider "aws" {
 
  #text
 
-resource "aws_instance" "app_server" {
+resource "aws_instance" "app_server12" {
   bucket = "examplebuckettftest"
   acl    = "pubic-read-write"
   versioning {
