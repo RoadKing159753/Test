@@ -17,9 +17,10 @@ provider "aws" {
 
 resource "aws_s3_bucket" "app_server12" {
   bucket = "examplebuckettftest"
-  acl    = "public-read-write"
+  acl    = "public-write"
   versioning {
     enabled = true
+    
   }
   logging {
     target_bucket = "pavantestbucket"
