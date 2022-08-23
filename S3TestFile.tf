@@ -15,13 +15,12 @@ provider "aws" {
 
  #text
 
-resource "aws_s3_bucket" "app_server12" {
+resource "aws_s3_bucket" "unrestricted" {
   bucket = "examplebuckettftest"
-  acl    = "private"
+  acl    = "public-read-write"
   versioning {
     enabled = true
     mfa_delete = true
-    
   }
   logging {
     target_bucket = "pavantestbucket"
