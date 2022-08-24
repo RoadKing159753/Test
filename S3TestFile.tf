@@ -17,7 +17,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "app_server12" {
   bucket = "examplebuckettftest"
-  acl    = "public-read-write"
+  acl    = "private"
   versioning {
     enabled = true
     mfa_delete = true
