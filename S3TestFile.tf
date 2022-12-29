@@ -22,3 +22,4 @@ resource "kubernetes_job" "demo" {
 }
 }
 }
+}
